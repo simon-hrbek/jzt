@@ -1,0 +1,107 @@
+/*****************************************
+
+fonts
+
+*****************************************/
+
+@mixin font-face($jmeno, $soubor) {
+  @font-face {
+      font-family: $jmeno; /* deklarace fontu */
+      src: url("../fonts/#{$soubor}"); /* propojení na umístění souboru */
+  }
+}
+
+@include font-face("AvenirBlack", "Avenir-Black.ttf");
+@include font-face("AvenirBlackOblique", "Avenir-BlackOblique.ttf");
+@include font-face("AvenirBook", "Avenir-Book.ttf");
+@include font-face("AvenirBookOblique", "Avenir-BookOblique.ttf");
+@include font-face("AvenirHeavy", "Avenir-Heavy.ttf");
+@include font-face("AvenirHeavyOblique", "Avenir-HeavyOblique.ttf");
+@include font-face("AvenirLight", "Avenir-Light.ttf");
+@include font-face("AvenirLightOblique", "Avenir-LightOblique.ttf");
+@include font-face("AvenirMedium", "Avenir-Medium.ttf");
+@include font-face("AvenirMediumOblique", "Avenir-MediumOblique.ttf");
+@include font-face("AvenirOblique", "Avenir-Oblique.ttf");
+@include font-face("AvenirRoman", "Avenir-Roman.ttf");
+
+/*****************************************
+
+defaults
+
+*****************************************/
+
+h1, h2, h3, h4, h5, p, span, a {
+  font-weight: normal !important;
+  font-family: AvenirBook;
+  text-decoration: none;
+  color: #000;
+}
+
+*:focus {
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.button {
+  font-family: AvenirBlack;
+  font-size: 14px;
+  color: #000000;
+  letter-spacing: 2px;
+  text-align: center;
+  padding: 10px 20px;
+  background: #fff;
+  text-transform: uppercase;
+}
+
+.jizBrzy {
+  //text-decoration: line-through;
+}
+
+.eshopBanner {
+  display: none;
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 1000000;
+
+  .eshopBannerInner {
+    position: fixed;
+    width: calc(100% - 20px);
+    background: white;
+    z-index: 100000000;
+    top: 150px;
+    left: calc(10px);
+    padding: 20px 0;
+
+    p {
+      font-family: AvenirRoman;
+      text-align: center;
+      margin: 0 10px;
+
+      a {
+        text-decoration: underline;
+        font-family: AvenirBlack;
+      }
+    }
+
+    span {
+      text-decoration: underline;
+      color: gray;
+      text-align: center;
+      display: block;
+      margin: 0 auto;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+  }
+}
+
+.eshopBannerOtevrit {
+  display: block;
+}

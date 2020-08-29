@@ -1,0 +1,157 @@
+.jumbotronFaqs2 {
+  @media (min-width: 900px) {
+    background: #ecd4997a !important;
+  }
+}
+
+.jumbotronFaqs {
+  background: #EBEBEB;
+  padding-top: 60px;
+  padding-bottom: 5px;
+  margin: 0 auto;
+  max-width: 1000px;
+
+  .nadpis {
+    position: relative;
+    width: fit-content;
+    text-align: center;
+    margin: 0 auto;
+
+    h1 {
+      font-family: AvenirBlack;
+      font-size: 30px;
+      color: #000000;
+      text-align: center;
+      z-index: 10;
+      position: relative;
+      margin-top: 25px;
+      margin-bottom: 25px;
+
+      @media (min-width: 900px) {
+        font-size: 57px;
+        padding-top: 45px;
+        margin-top: 0;
+      }
+    }
+
+    .prouzek {
+      width: calc(100% + 20px);
+      height: 20px;
+      opacity: 0.5;
+      background: #FFFFFF;
+      position: absolute;
+      top: 25px;
+      left: -10px;
+
+      @media (min-width: 900px) {
+        height: 39px;
+        width: calc(100% + 30px);
+        left: -15px;
+        bottom: 0;
+        top: auto;
+        opacity: 0.8;
+      }
+    }
+  }
+
+  @media (min-width: 900px) {
+    margin-top: 80px;
+    padding: 0;
+    border-radius: 5px;
+    width: calc(100% - 50px);
+    padding-bottom: 30px;
+  }
+}
+
+.faqs {
+  ul {
+    padding: 0;
+    margin: 0 auto;
+    max-width: 650px;
+
+    li {
+      margin: 0 auto;
+      list-style: none;
+      margin-top: 35px;
+      margin-bottom: 35px;
+
+      .otazka {
+        width: calc(100% - 40px);
+        margin: 0 auto;
+        position: relative;
+
+        h2 {
+          font-family: AvenirMedium;
+          font-size: 20px;
+          color: #000000;
+          letter-spacing: 0;
+          line-height: 34px;
+          cursor: pointer;
+          margin-right: 40px;
+
+          &::before {
+            content: "";
+            width: 23px;
+            position: absolute;
+            top: 5px;
+            right: 0;
+            height: 23px;
+            background: url("../img_optim/minus.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            cursor: pointer;
+          }
+        }
+
+        p {
+          font-family: AvenirMedium;
+          font-size: 14px;
+          color: #838383;
+          letter-spacing: 0;
+          line-height: 23px;
+
+          a {
+            text-decoration: underline;
+            font-family: AvenirHeavy;
+          }
+        }
+
+        .subnadpis {
+          color: black;
+          font-family: AvenirMedium;
+          font-size: 16px;
+          margin-top: 30px;
+        }
+      }
+
+      .zavreno {
+        h2 {
+          &::before {
+            content: "";
+            width: 23px;
+            position: absolute;
+            top: 5px;
+            right: 0;
+            height: 23px;
+            background: url("../img_optim/plus.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+          }
+        }
+
+        p {
+          display: none;
+        }
+      }
+
+      @media (min-width: 900px) {
+        margin: 60px auto;
+      }
+    }
+  }
+
+  @media (min-width: 900px) {
+
+  }
+}

@@ -1,0 +1,49 @@
+footer {
+  background: #2C2C2C;
+
+  ul {
+    text-align: center;
+    margin: 0 auto;
+    padding: 15px 0;
+
+    li {
+      list-style: none;
+      width: 260px;
+      margin: 19px auto;
+      font-family: AvenirHeavy;
+      font-size: 16px;
+      color: #FFFFFF;
+
+      a {
+        font-family: AvenirHeavy;
+        font-size: 16px;
+        color: #FFFFFF;
+        letter-spacing: 0;
+        text-align: center;
+      }
+
+      @media (min-width: 900px) {
+        display: inline-block;
+        margin: 10px 0;
+      }
+    }
+
+    @media (min-width: 900px) {
+      width: 530px;
+    }
+  }
+
+  span {
+    opacity: 0.5;
+    font-family: AvenirHeavy;
+    font-size: 13px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-align: center;
+    width: 100%;
+    display: block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background: #1D1D1D;
+  }
+}

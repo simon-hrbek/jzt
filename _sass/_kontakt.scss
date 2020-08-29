@@ -1,0 +1,289 @@
+/img_optim/.kontaktBody {
+  background: #FBFBFB;
+
+  @media (min-width: 900px) {
+    background: #fff;
+  }
+}
+
+.jumbotronKontakt {
+  .jumboTop {
+    text-align: center;
+    background-image: url("../img_optim/pozadi2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 0;
+    padding-top: 60px;
+    height: 440px;
+    max-width: 1000px;
+    margin: 0 auto;
+
+    &::before {
+      width: 100%;
+      height: 100%;
+      content: " ";
+      background-color: black;
+      opacity: 60%;
+      position: absolute;
+      z-index: -10;
+      top: 0;
+      left: 0;
+
+      @media (min-width: 900px) {
+        border-radius: 5px;
+      }
+    }
+
+    h1 {
+      font-family: AvenirBlack;
+      font-size: 36px;
+      color: #FFFFFF;
+      text-align: center;
+      margin: 0 auto;
+      margin-top: 40px;
+      margin-bottom: 30px;
+
+      @media (min-width: 900px) {
+        font-size: 57px;
+        padding-top: 55px;
+        margin-top: 0;
+      }
+    }
+
+    a {
+      display: block;
+      width: fit-content;
+      margin: 0 auto;
+      margin-bottom: 15px;
+      position: relative;
+      z-index: 3000;
+    }
+
+    @media (min-width: 900px) {
+      margin-top: 80px;
+      padding: 0;
+      border-radius: 5px;
+      width: calc(100% - 50px);
+      height: auto;
+      padding-bottom: 60px;
+      background-position: 50% 43%;
+    }
+  }
+
+  .jumboBot {
+    margin: 0 auto;
+    margin-top: -160px;
+    background: #fff;
+    width: calc(100% - 30px);
+    max-width: 330px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.14);
+    border-radius: 5px;
+    position: relative;
+    padding: 10px 0;
+
+    img {
+      position: absolute;
+      width: 80px;
+      right: 30px;
+      top: calc(50% - 90px/2);
+
+      @media (max-width: 345px) {
+        width: 60px;
+        right: 20px;
+        top: calc(50% - 67px/2);
+      }
+    }
+
+    div {
+      display: inline-block;
+      margin-left: 30px;
+
+      p {
+        font-family: AvenirMedium;
+        font-size: 16px;
+        color: #000000;
+        letter-spacing: 0;
+        line-height: 25px;
+
+        span {
+          font-family: AvenirHeavy;
+        }
+      }
+
+      @media (max-width: 345px) {
+        margin-left: 20px;
+      }
+    }
+
+    @media (min-width: 900px) {
+      display: none;
+    }
+  }
+}
+
+.contentKontakt {
+  text-align: center;
+
+  .seznam {
+    ul {
+      padding: 0;
+      max-width: 605px;
+      width: calc(100% - 40px);
+      text-align: left;
+      margin: 0 auto;
+      margin-top: 40px;
+
+      li {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        width: 300px;
+        text-align: left;
+        font-family: AvenirBook;
+        margin-bottom: 30px;
+        display: inline-block;
+
+        a {
+          font-family: AvenirBlack;
+          text-decoration: none;
+        }
+
+        span {
+          font-family: AvenirBlack;
+        }
+      }
+    }
+  }
+
+  .popisekKontakt {
+    font-family: AvenirMedium;
+    font-size: 16px;
+    color: #000000;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 27px;
+    width: calc(100% - 30px);
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    max-width: 370px;
+
+    a {
+      font-family: AvenirMedium;
+      text-decoration: underline;
+    }
+
+    span {
+      font-family: AvenirBlack;
+      display: block;
+    }
+
+    @media (min-width: 900px) {
+      text-align: left;
+      margin: 0;
+      margin-top: 30px;
+      max-width: none;
+    }
+  }
+
+  .mapa {
+
+    h2 {
+      font-family: AvenirMedium;
+      font-size: 23px;
+      color: #000000;
+      letter-spacing: 0;
+      text-align: center;
+      line-height: 34px;
+
+      @media (min-width: 900px) {
+        font-size: 28px;
+        line-height: 34px;
+        margin-bottom: 40px;
+      }
+    }
+
+    div {
+      width: 100%;
+      height: 500px;
+      background: gray;
+
+      iframe {
+        width: 100%;
+        height: 100%;
+        border: 0;
+      }
+
+      @media (min-width: 900px) {
+        border-radius: 5px;
+        max-width: 950px;
+        margin: 0 auto;
+        width: calc(100% - 50px);
+      }
+    }
+
+    @media (min-width: 900px) {
+      margin-top: 40px;
+    }
+  }
+}
+
+.desktopVizitka {
+  display: none;
+  margin: 0 auto;
+  position: relative;
+  text-align: left;
+  background: #fff;
+  width: calc(100% - 30px);
+  max-width: 340px;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.14);
+  border-radius: 5px;
+  padding: 10px 0;
+  float: right;
+  margin-left: 70px;
+
+  img {
+    position: absolute;
+    width: 84px;
+    right: 30px;
+    top: calc(50% - 94px/2);
+
+    @media (max-width: 330px) {
+      display: none;
+    }
+  }
+
+  div {
+    display: inline-block;
+    margin-left: 30px;
+    text-align: left;
+
+    p {
+      font-family: AvenirMedium;
+      font-size: 16px;
+      color: #000000;
+      letter-spacing: 0;
+      line-height: 25px;
+      text-align: left;
+
+      span {
+        font-family: AvenirHeavy;
+      }
+    }
+  }
+
+  @media (min-width: 900px) {
+    display: block;
+    margin-top: -28px;
+  }
+}
+
+.desktopVizitkaOuter {
+  @media (min-width: 900px) {
+    max-width: 730px;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 120px;
+  }
+}
